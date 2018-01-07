@@ -38,6 +38,11 @@ class PostsController < ApplicationController
     end
   end
 
+  # get all the posts from the same user
+  def user_posts
+    @user = User.find_by(username: params[:name])
+  end
+
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
