@@ -17,7 +17,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
-        <td><%= post.user.username %></td>
+        <td><em><%= link_to post.user.username, user_posts_path(name: post.user.username) %></em></td>
         <td><%= post.user.avatar.url %></td>
         <td><%= post.blog_entry.html_safe %></td>
         <td><%= link_to 'Show', post %></td>
