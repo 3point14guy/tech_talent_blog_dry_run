@@ -29,6 +29,12 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Devise will take care of user auth for us
 gem 'devise'
+# stores user profile pic on central database
+gem 'gravatarify', '~> 3.0.0'
+# CarrierWave is a way to upload pics
+gem 'carrierwave', '~> 1.2.2'
+# Mini_magic manipulates images w minimal memory use
+# gem 'mini_magick', '~> 4.8'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

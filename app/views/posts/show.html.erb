@@ -5,6 +5,8 @@
   <%= @post.title %>
 </p>
 
+<%= image_tag(@post.user.avatar.url, alt: 'User Image') %>
+
 <p>
 	<strong>By:</strong>
     <%= @post.user.username %>
