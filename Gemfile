@@ -33,6 +33,8 @@ gem 'devise'
 gem 'gravatarify', '~> 3.0.0'
 # CarrierWave is a way to upload pics
 gem 'carrierwave', '~> 1.2.2'
+# kaminari for pagination
+gem 'kaminari'
 # Mini_magic manipulates images w minimal memory use
 # gem 'mini_magick', '~> 4.8'
 # Use Redis adapter to run Action Cable in production

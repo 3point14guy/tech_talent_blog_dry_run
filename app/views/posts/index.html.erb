@@ -19,7 +19,7 @@
         <td><%= post.title %></td>
         <td><%= post.user.username %></td>
         <td><%= post.user.avatar.url %></td>
-        <td><%= post.blog_entry %></td>
+        <td><%= post.blog_entry.html_safe %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,5 +29,6 @@
 </table>
 </div>
 <br>
-
 <%= link_to 'New Post', new_post_path %>
+<br/>
+<%= paginate @posts %>
