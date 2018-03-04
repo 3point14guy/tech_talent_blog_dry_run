@@ -18,7 +18,7 @@
       <tr>
         <td><%= post.title %></td>
         <td><em><%= link_to post.user.username, user_posts_path(name: post.user.username) %></em></td>
-        <%= if post.user.avatar != nil %>
+        <% if post.user.avatar.url != nil %>
           <td><%= image_tag post.user.avatar.url, size: 50, class: "img-responsive" %></td>
           <% end %>
         <td><%= post.blog_entry.html_safe %></td>
