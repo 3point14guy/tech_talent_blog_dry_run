@@ -5,7 +5,7 @@
   <%= @post.title %>
 </p>
 
-<%= image_tag(@post.user.avatar.url, alt: 'User Image') %>
+<%= image_tag@post.user.avatar.url, alt: 'User Image', size: 100, class: "img-responsive" %>
 
 <p>
 	<strong>By:</strong>

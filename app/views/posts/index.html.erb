@@ -18,7 +18,7 @@
       <tr>
         <td><%= post.title %></td>
         <td><em><%= link_to post.user.username, user_posts_path(name: post.user.username) %></em></td>
-        <td><%= post.user.avatar.url %></td>
+        <td><%= image_tag post.user.avatar.url, size: 50, class: "img-responsive" %></td>
         <td><%= post.blog_entry.html_safe %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
