@@ -4,9 +4,9 @@
   <strong>Title:</strong>
   <%= @post.title %>
 </p>
-
-<%= image_tag@post.user.avatar.url, alt: 'User Image', size: 100, class: "img-responsive" %>
-
+<% if post.user.avatar != nil %>
+	<%= image_tag@post.user.avatar.url, alt: 'User Image', size: 100, class: "img-responsive" %>
+<% end %>
 <p>
 	<strong>By:</strong>
     <%= @post.user.username %>
